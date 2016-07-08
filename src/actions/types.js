@@ -1,0 +1,3 @@
+export const ADD_PICTURE = 'ADD_PICTURE';
+export const UPDATE_IMAGES = 'UPDATE_IMAGES';
+export const DELETE_IMAGE = 'DELETE_IMAGE';
