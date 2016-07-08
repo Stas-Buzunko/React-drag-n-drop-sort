@@ -17,9 +17,8 @@ export function uploadImage(image) {
 				console.log(response);
 				dispatch({ type: ADD_PICTURE, payload:image});
 			})
-			.catch((error) => {
-				// console.log('Error while uploading ' + error);
-				console.log(error);
+			.catch(() => {
+				console.log('Error while uploading ');
 			});
 	};
 }
