@@ -5,7 +5,7 @@ import {
 	DELETE_IMAGE
 } from './types';
 
-const url = 'http://198.211.121.23:5000/v0';
+const url = 'https://198.211.121.23:5000/v0';
 
 export function uploadImage(image) {
 	const data = new FormData();
@@ -17,8 +17,9 @@ export function uploadImage(image) {
 				console.log(response);
 				dispatch({ type: ADD_PICTURE, payload:image});
 			})
-			.catch(() => {
-				console.log('Error while uploading')
+			.catch((error) => {
+				// console.log('Error while uploading ' + error);
+				console.log(error);
 			});
 	};
 }
