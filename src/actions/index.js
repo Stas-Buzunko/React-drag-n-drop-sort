@@ -5,9 +5,10 @@ import {
   DELETE_IMAGE
 } from './types';
 
-const url = 'https://198.211.121.23:5000/v0';
+const url = 'http://198.211.121.23:5000/v0';
 
 export function uploadImage(image) {
+
   const data = new FormData();
 
   data.append('file', image, image.name);
