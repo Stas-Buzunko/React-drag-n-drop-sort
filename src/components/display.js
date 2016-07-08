@@ -4,7 +4,7 @@ import Container from './container';
 import * as actions from '../actions/';
 
 class Display extends Component {
-	constructor(props) {
+  constructor(props) {
     super(props);
 
     this.state = { 
@@ -12,21 +12,21 @@ class Display extends Component {
     };
   }
 
-	render() {
-		return (
-			<div className='col-sm-8 grid'>
-				<Container images={this.props.images} 
-					updateImages={this.props.updateImages}
-				/>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className='col-sm-8 grid'>
+        <Container images={this.props.images} 
+          updateImages={this.props.updateImages}
+        />
+      </div>
+    );
+  }
 } 
 
 function mapStateToProps(state) {
-	return {
-		images:state.images
-	};
+  return {
+    images:state.images
+  };
 };
 
 export default connect(mapStateToProps, actions)(Display);

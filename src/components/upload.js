@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions/';
 
 class Upload extends Component {
-	onDrop(imageFile) {
+  onDrop(imageFile) {
     for (var i = 0; i < imageFile.length; i++) {
       this.props.uploadImage(imageFile[i]); 
     }
@@ -14,17 +14,17 @@ class Upload extends Component {
   }
   
   render() {
-  	return (
-  		<div className="col-sm-4">
-  			<h2>Upload Images</h2>
-	  		<Dropzone 
+    return (
+      <div className="col-sm-4">
+        <h2>Upload Images</h2>
+        <Dropzone 
           className="dropzone-container" 
           ref="dropzone" 
           onDrop={this.onDrop.bind(this)}
         >
-	        <div className="drop-text">Drop your image here</div>
-	      </Dropzone>
-	      <button 
+          <div className="drop-text">Drop your image here</div>
+        </Dropzone>
+        <button 
           className="btn btn-primary btn-block btn-lg" 
           onClick={this.onOpenClick.bind(this)}
         >Upload
@@ -43,7 +43,7 @@ class Upload extends Component {
           })}
         </ul>
       </div>
-  	);
+    );
   }
 }
 
