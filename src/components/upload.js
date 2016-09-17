@@ -47,9 +47,7 @@ class Upload extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    images:state.images
-  };
-};
+const mapStateToProps = state => ({
+  images:state.images
+});
 export default connect(mapStateToProps, actions)(Upload);

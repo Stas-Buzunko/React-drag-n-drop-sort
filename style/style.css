@@ -41,6 +41,7 @@
   border-color: #666;
   border-style: dashed;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .img-name {

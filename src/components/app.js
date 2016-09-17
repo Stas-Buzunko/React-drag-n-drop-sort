@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Upload from './upload';
 import Display from './display';
 
 
-export default class App extends Component {
+const App = () => (
+  <div>
+    <Upload/>
+    <Display/>
+  </div>
+);
 
-  render() {
-    return (
-      <div>
-        <Upload/>
-        <Display/>
-      </div>
-    );
-  }
-}
+export default  App;

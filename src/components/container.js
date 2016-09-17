@@ -34,12 +34,13 @@ class Container extends Component {
       <div>
         {images.map((image, i) => {
           return (
-            <Image className='col-sm-4 single-item'
+            <Image
+              className='col-sm-4 single-item'
               key={i}
               index={i}
               id={i}
               src={image.preview}
-              moveImage={this.moveImage} 
+              moveImage={this.moveImage}
             />
           );
         })}
